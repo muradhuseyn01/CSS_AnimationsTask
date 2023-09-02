@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+      width: 100%;
+      height: 400px;
+      margin-left: 400px;
+}
+
+ul{
+        list-style-type: none;
+        display: flex;
+}
+ul>li{
+    position: relative;
+}
+ul li a{
+       text-decoration: none;
+       width: 150px;
+       font-size: 1.3rem;
+       color: white;
+       background-color: green;
+       padding: 22px 40px;
+       display: flex;
+       justify-content: center;
+}
+
+.Dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    display: none;
+}
+
+.second-nav ul li a{
+       font-size: 1.3rem;
+       color: white;
+       background-color: green;
+       padding: 22px 40px;
+}
+.navbar a:hover, .navbar a:active{
+    background-color: darkgreen;
+}
+.nav li:hover .second-nav{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+}
+.nav li:hover .three-nav{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+}
+.nav li:hover .fourth-nav{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+}
+.nav li:hover .fifth-nav{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+}
+.nav li:hover .sixth-nav{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+}
+
+.nav li li{
+    animation-name: Animatedlist;
+    animation-duration:calc(0.5s * var(--i));
+    animation-fill-mode: forwards;
+}
+@keyframes Animatedlist{
+    from{
+        transform: rotateX(180deg);
+        opacity: 0;
+    }
+    to{
+        transform: rotateX(360deg);
+        opacity: 1;
+    }
+}
+
+
+

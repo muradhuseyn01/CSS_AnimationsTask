@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.content{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    >.box{
+        width: 200px;
+        height: 200px;
+        font-size: 5rem;
+        color: aliceblue;
+        font-family: sans-serif;
+        transition: all 4s linear;
+    }
+    >.cardH{
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    >.cardG{
+        background-color:red;
+        display: flex;
+        justify-content: center;
+        align-items: center;  z-index: 1;
+    }
+    >.cardI{
+        background-color: seagreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;  z-index: 1;
+    }
+    >.cardP{
+        background-color:steelblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;  z-index: 1;
+    }
+    >.cardL{
+        background-color:rebeccapurple;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        z-index: 1;
+    }
+    >.backgroundC{
+        position: absolute;
+        width: 100%;
+        height: 100dvh;
+        background-color: aliceblue;
+        transition: background-color 0.1s linear;
+      }
+      
+}
+.box:hover >span{
+    transform: translateY(-30px);
+}
+.cardH:hover ~.backgroundC{
+    background-color: orange;
+}
+.cardG:hover ~.backgroundC{
+    background-color:red;
+}
+.cardI:hover ~.backgroundC{
+    background-color:seagreen;
+}
+.cardP:hover ~.backgroundC{
+    background-color:steelblue;
+}
+.cardL:hover ~.backgroundC{
+    background-color:rebeccapurple;
+}

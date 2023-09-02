@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100dvh;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+h1{
+   text-align: center;
+   color: seagreen;
+   font-size: 2rem;
+   margin: 20px 0;
+  }
+p{
+   margin: 17px 0;
+   animation-duration: 2s;
+   animation-timing-function: ease-in-out;
+   animation-direction: normal;
+   animation-iteration-count: infinite;
+   animation-delay:calc(0.5s * var(--i))
+   
+  }
+p:nth-of-type(1){
+   text-align: center;
+   margin-bottom: 30px;
+  }
+p:nth-of-type(2){
+   animation-name: anima-normal;
+  }
+p:nth-of-type(3){
+   animation-name: anima-reverse;
+  }
+p:nth-of-type(4){
+   animation-name: anima-alternate;
+  }
+p:nth-of-type(5){
+   animation-name: anima-alternate-reverse;
+  }
+
+p:hover ~ button {
+   background-color: aqua;
+}
+
+@keyframes anima-normal{
+    from{
+       left: 0;
+    }
+    to{
+       transform: translateX(20%);
+    }
+}
+@keyframes anima-reverse{
+    from{
+       left: 0;
+    }
+    to{
+       transform: translateX(20%);
+    }
+}
+@keyframes anima-alternate{
+    from{
+       left: 0;
+    }
+    to{
+       transform: translateX(20%);
+    }
+}
+@keyframes anima-alternate-reverse{
+    from{
+       left: 0;
+    }
+    to{
+       transform: translateX(20%);
+    }
+}
